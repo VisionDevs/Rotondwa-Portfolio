@@ -1079,6 +1079,11 @@ ul {
     overflow: hidden;
 }
 
+.browser-mockup.compact {
+    border: none;
+    border-radius: 0;
+}
+
 .browser-header {
     display: flex;
     align-items: center;
@@ -1157,7 +1162,7 @@ ul {
 /* Project Cards */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 1.5rem;
     margin-bottom: 3rem;
 }
@@ -1166,10 +1171,11 @@ ul {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: 16px;
-    padding: 2rem;
+    padding: 0;
     transition: var(--transition-base);
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .project-card:hover {
@@ -1178,11 +1184,34 @@ ul {
     transform: translateY(-4px);
 }
 
+.project-card-preview {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.project-card-preview .browser-mockup.compact .browser-header {
+    padding: 0.5rem 0.75rem;
+}
+
+.project-card-preview .browser-mockup.compact .browser-dots span {
+    width: 7px;
+    height: 7px;
+}
+
+.project-card-preview .browser-mockup.compact .browser-url {
+    font-size: 0.6rem;
+    padding: 0.25rem 0.6rem;
+}
+
+.project-card-preview .browser-mockup.compact .browser-body {
+    aspect-ratio: 16/9;
+}
+
 .project-card-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
 .project-card-icon {
@@ -1214,24 +1243,27 @@ ul {
 }
 
 .project-card-title {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: var(--text-primary);
     margin-bottom: 0.75rem;
+    padding: 0 1.5rem;
 }
 
 .project-card-desc {
     color: var(--text-secondary);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     line-height: 1.7;
     flex: 1;
     margin-bottom: 1.25rem;
+    padding: 0 1.5rem;
 }
 
 .project-card-tech {
     display: flex;
     flex-wrap: wrap;
     gap: 0.4rem;
+    padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
 .project-card-tech span {
