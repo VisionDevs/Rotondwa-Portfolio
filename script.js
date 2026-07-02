@@ -102,11 +102,12 @@ function initTypewriter() {
 
     const phrases = [
         'Software Developer',
-        'C# / .NET Specialist',
+        'Hollard Codeathon Winner',
+        'C# / .NET 10 / Blazor',
+        'Angular & React Developer',
+        'Playwright Test Automation',
         'SOLID Architecture Advocate',
-        'AI-Assisted Developer',
-        'Full-Stack Engineer',
-        'Clean Code Enthusiast'
+        'AI-Assisted Developer'
     ];
 
     let phraseIndex = 0;
@@ -248,8 +249,8 @@ function initDownloadCV() {
     downloadBtn.addEventListener('click', (e) => {
         e.preventDefault();
         const link = document.createElement('a');
-        link.href = 'Rotondwa_Vision_Mavhungu_CV_insurtech.docx';
-        link.download = 'Rotondwa_Vision_Mavhungu_CV.docx';
+        link.href = 'Rotondwa_Vision_Mavhungu_CV.pdf';
+        link.download = 'Rotondwa_Vision_Mavhungu_CV.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
