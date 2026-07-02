@@ -3,17 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rotondwa Vision Mavhungu - Junior Software Developer</title>
+    <title>Rotondwa Vision Mavhungu | Software Developer</title>
+    <meta name="description" content="Software Developer at Hollard Insurance specializing in C#, .NET, SOLID architecture, and AI-assisted development. Building enterprise solutions with modern best practices.">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <span class="loader-text">&lt;RV/&gt;</span>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">R<span>Vision</span></div>
+            <a href="#home" class="logo">
+                <span class="logo-bracket">&lt;</span>RV<span class="logo-bracket">/&gt;</span>
+            </a>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
@@ -23,6 +33,9 @@
                 <li><a href="#certifications" class="nav-link">Certifications</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <div class="nav-actions">
+                <a href="#contact" class="nav-cta">Hire Me</a>
+            </div>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -33,430 +46,697 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-bg-pattern"></div>
         <div class="hero-container">
-            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
-                <span class="hero-subtitle">Welcome to my portfolio</span>
-                <h1 class="hero-title">Rotondwa Vision <span class="highlight">Mavhungu</span></h1>
-                <p class="hero-text">Junior Software Developer at Hollard Insurance | Full-Stack Developer (C#, .NET, Python) | Computer Science & Informatics Graduate</p>
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <div class="hero-badge">
+                    <span class="status-dot"></span>
+                    Available for opportunities
+                </div>
+                <h1 class="hero-title">
+                    <span class="greeting">Hello, I'm</span>
+                    <span class="name">Rotondwa Vision</span>
+                    <span class="surname">Mavhungu</span>
+                </h1>
+                <div class="hero-role">
+                    <span class="role-prefix">&gt;</span>
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="cursor-blink">|</span>
+                </div>
+                <p class="hero-description">
+                    Software Developer at <strong>Hollard Insurance</strong> crafting enterprise solutions with 
+                    <strong>C#, .NET, SOLID principles</strong>, and <strong>AI-assisted development</strong>. 
+                    Passionate about clean architecture and delivering real business value.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="2">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="6">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                </div>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary pulse">
-                        <i class="fas fa-paper-plane"></i> Get in Touch
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
                     </a>
-                    <a href="#projects" class="btn btn-secondary glow">
-                        <i class="fas fa-code"></i> View My Work
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Let's Talk</span>
+                        <i class="fas fa-comments"></i>
                     </a>
                 </div>
+                <div class="hero-social">
+                    <a href="https://github.com/VisionDevs" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/vision-mavhungu-050023319" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:vision.mavhungu@icloud.com"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
-            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-                <div class="profile-frame">
-                    <img src="image/image0.png" alt="Rotondwa Vision Mavhungu" class="profile-img">
+            <div class="hero-visual" data-aos="fade-left" data-aos-duration="1200">
+                <div class="code-window">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="code-title">developer.cs</span>
+                    </div>
+                    <pre class="code-body"><code><span class="code-keyword">public class</span> <span class="code-class">Developer</span>
+{
+    <span class="code-keyword">public string</span> Name => <span class="code-string">"Rotondwa Vision"</span>;
+    <span class="code-keyword">public string</span> Role => <span class="code-string">"Software Developer"</span>;
+    <span class="code-keyword">public string</span> Company => <span class="code-string">"Hollard Insurance"</span>;
+    
+    <span class="code-keyword">public string</span>[] Principles => <span class="code-keyword">new</span>[]
+    {
+        <span class="code-string">"SOLID"</span>, <span class="code-string">"Clean Code"</span>,
+        <span class="code-string">"DRY"</span>, <span class="code-string">"KISS"</span>
+    };
+
+    <span class="code-keyword">public bool</span> IsPassionate => <span class="code-keyword">true</span>;
+}</code></pre>
                 </div>
             </div>
         </div>
         <div class="scroll-indicator">
-            <span></span>
-            <span></span>
-            <span></span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about section">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">About <span>Me</span></h2>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Turning complex business requirements into elegant software solutions</p>
+            </div>
             <div class="about-content">
                 <div class="about-image" data-aos="fade-right" data-aos-duration="800">
-                    <div class="image-wrapper">
+                    <div class="image-frame">
                         <img src="image/image0.png" alt="Rotondwa Vision Mavhungu">
-                        <div class="experience-badge">
-                            <span class="years">1+</span>
-                            <span class="text">Years of Experience</span>
-                        </div>
+                        <div class="image-border"></div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="exp-number">2+</div>
+                        <div class="exp-text">Years in<br>Enterprise Tech</div>
                     </div>
                 </div>
                 <div class="about-text" data-aos="fade-left" data-aos-duration="800">
-                    <h3>Junior Software Developer at <span class="company">Hollard Insurance</span></h3>
-                    <p>I'm a passionate Junior Software Developer with a strong foundation in full-stack development and enterprise systems. Currently working in a technology-driven environment, I specialize in building scalable applications using C#, .NET, and modern web technologies.</p>
-                    <p>My experience includes analyzing system workflows, developing business-critical applications, and collaborating with stakeholders to deliver meaningful solutions. I'm particularly drawn to backend development, API design, and low-code enterprise platforms.</p>
-                    <div class="personal-info">
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Johannesburg, South Africa</span>
+                    <h3>Software Developer at <span class="highlight">Hollard Insurance</span></h3>
+                    <p>I'm a results-driven Software Developer with hands-on experience building enterprise-grade applications in the insurance technology sector. My journey from learner to developer at one of South Africa's largest insurers has equipped me with deep expertise in <strong>SOLID principles</strong>, <strong>clean architecture</strong>, and <strong>agile delivery</strong>.</p>
+                    <p>I specialise in full-stack development with <strong>C#/.NET</strong>, designing RESTful APIs, implementing role-based access control, and leveraging <strong>AI-assisted development</strong> (GitHub Copilot, prompt engineering) to accelerate delivery without compromising quality.</p>
+                    <p>Beyond enterprise work, I build production websites for real clients — including the full <strong>gsaw.org.za</strong> platform — demonstrating my ability to deliver end-to-end from concept to deployment.</p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-building"></i>
+                            <span>Enterprise Development</span>
                         </div>
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>vision.mavhungu@icloud.com</span>
+                        <div class="highlight-item">
+                            <i class="fas fa-brain"></i>
+                            <span>AI-Assisted Coding</span>
                         </div>
-                        <div class="info-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+27 72 183 2918</span>
+                        <div class="highlight-item">
+                            <i class="fas fa-cubes"></i>
+                            <span>SOLID Architecture</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-users"></i>
+                            <span>Client Delivery</span>
                         </div>
                     </div>
-                    <a href="#" class="btn btn-primary ripple" id="downloadCv">
-                        <i class="fas fa-download"></i> Download CV
-                    </a>
+                    <div class="about-actions">
+                        <a href="#" class="btn btn-primary" id="downloadCv">
+                            <i class="fas fa-download"></i>
+                            <span>Download CV</span>
+                        </a>
+                        <a href="#contact" class="btn btn-ghost">
+                            <i class="fas fa-handshake"></i>
+                            <span>Work With Me</span>
+                        </a>
+                    </div>
                 </div>
+            </div>
+            <div class="section-close" data-aos="fade-up">
+                <span class="section-tag">&lt;/about&gt;</span>
             </div>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="experience">
+    <section id="experience" class="experience section">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Work <span>Experience</span></h2>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">&lt;experience&gt;</span>
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">My professional journey in enterprise software development</p>
+            </div>
             <div class="timeline">
                 <div class="timeline-item" data-aos="fade-up" data-aos-duration="800">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">March 2026 - Present</div>
-                    <div class="timeline-content card-hover">
-                        <h3>Junior Software Developer</h3>
-                        <h4>Hollard Insurance</h4>
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> Design, develop, and test software applications using C# and .NET</li>
-                            <li><i class="fas fa-check-circle"></i> Collaborate with stakeholders to translate requirements into technical solutions</li>
-                            <li><i class="fas fa-check-circle"></i> Write clean, maintainable code following release management procedures</li>
-                            <li><i class="fas fa-check-circle"></i> Perform unit testing and system integration testing</li>
+                    <div class="timeline-marker">
+                        <div class="timeline-dot active"></div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-role">
+                                <h3>Junior Software Developer</h3>
+                                <h4><i class="fas fa-building"></i> Hollard Insurance</h4>
+                            </div>
+                            <span class="timeline-date">Mar 2026 — Present</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Design, develop, and test enterprise applications using <strong>C#, .NET 8+</strong>, and <strong>SQL Server</strong></li>
+                            <li>Apply <strong>SOLID principles</strong> (SRP, OCP, LSP, ISP, DIP) and clean architecture patterns</li>
+                            <li>Build RESTful APIs with <strong>JWT authentication</strong> and role-based access control</li>
+                            <li>Leverage <strong>AI tools</strong> (GitHub Copilot, ChatGPT) for accelerated, quality-focused delivery</li>
+                            <li>Collaborate with cross-functional teams using Agile/Scrum methodologies</li>
+                            <li>Implement unit testing, integration testing, and CI/CD pipelines</li>
                         </ul>
+                        <div class="timeline-tech">
+                            <span>C#</span><span>.NET</span><span>SQL Server</span><span>REST APIs</span><span>Git</span><span>Azure DevOps</span>
+                        </div>
                     </div>
                 </div>
+
                 <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">March 2025 - March 2026</div>
-                    <div class="timeline-content card-hover">
-                        <h3>Learner - Outsystems / CIRO Learner</h3>
-                        <h4>Hollard Insurance</h4>
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> Analyzed business processes and data flows for business-critical applications</li>
-                            <li><i class="fas fa-check-circle"></i> Supported end-to-end application workflows and data validation</li>
-                            <li><i class="fas fa-check-circle"></i> Mastered 7+ enterprise platforms demonstrating rapid upskilling</li>
-                            <li><i class="fas fa-check-circle"></i> Collaborated with technical teams to identify process improvements</li>
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-role">
+                                <h3>OutSystems / CIRO Learner Developer</h3>
+                                <h4><i class="fas fa-building"></i> Hollard Insurance</h4>
+                            </div>
+                            <span class="timeline-date">Mar 2025 — Mar 2026</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Analysed business processes and data flows for mission-critical insurance applications</li>
+                            <li>Mastered <strong>7+ enterprise platforms</strong> demonstrating rapid technical upskilling</li>
+                            <li>Built low-code applications on OutSystems for internal business workflows</li>
+                            <li>Supported end-to-end application lifecycles including data validation and UAT</li>
+                            <li>Documented technical specifications and process improvement recommendations</li>
                         </ul>
+                        <div class="timeline-tech">
+                            <span>OutSystems</span><span>BPMN</span><span>SQL</span><span>Process Analysis</span><span>UAT</span>
+                        </div>
                     </div>
                 </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-role">
+                                <h3>Freelance Web Developer</h3>
+                                <h4><i class="fas fa-globe"></i> Independent Client Work</h4>
+                            </div>
+                            <span class="timeline-date">2025 — Present</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Designed and delivered the full <strong>gsaw.org.za</strong> website for a registered political organisation</li>
+                            <li>Handled end-to-end delivery: requirements gathering, design, development, and deployment</li>
+                            <li>Implemented responsive design, CMS-style content management, and SEO optimisation</li>
+                            <li>Managed client relationship, feedback cycles, and production launch</li>
+                        </ul>
+                        <div class="timeline-tech">
+                            <span>HTML/CSS</span><span>JavaScript</span><span>Responsive Design</span><span>SEO</span><span>Client Management</span>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="timeline-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">March 2022 - December 2024</div>
-                    <div class="timeline-content card-hover">
-                        <h3>Peer Mentor</h3>
-                        <h4>PROTEC STEM</h4>
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> Mentored students in programming and mathematics</li>
-                            <li><i class="fas fa-check-circle"></i> Simplified complex technical concepts for better understanding</li>
-                            <li><i class="fas fa-check-circle"></i> Developed customized learning strategies</li>
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-role">
+                                <h3>Peer Mentor — Programming & Mathematics</h3>
+                                <h4><i class="fas fa-graduation-cap"></i> PROTEC STEM</h4>
+                            </div>
+                            <span class="timeline-date">Mar 2022 — Dec 2024</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Mentored students in programming fundamentals, data structures, and mathematics</li>
+                            <li>Developed customised learning strategies improving student outcomes</li>
+                            <li>Demonstrated strong communication and technical explanation skills</li>
                         </ul>
+                        <div class="timeline-tech">
+                            <span>Teaching</span><span>Python</span><span>Java</span><span>Mathematics</span>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="section-close" data-aos="fade-up">
+                <span class="section-tag">&lt;/experience&gt;</span>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills" class="skills section">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Technical <span>Skills</span></h2>
-            <div class="skills-content">
-                <div class="skill-category" data-aos="fade-up" data-aos-duration="800">
-                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
-                    <div class="skill-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
-                            <span>C#</span>
-                            <div class="skill-level" style="width: 85%"></div>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">Technical Arsenal</h2>
+                <p class="section-subtitle">Technologies, principles, and tools I work with daily</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="skill-card-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-code"></i>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-python"></i></div>
-                            <span>Python</span>
-                            <div class="skill-level" style="width: 80%"></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-js"></i></div>
-                            <span>JavaScript</span>
-                            <div class="skill-level" style="width: 75%"></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-database"></i></div>
-                            <span>SQL</span>
-                            <div class="skill-level" style="width: 80%"></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-java"></i></div>
-                            <span>Java</span>
-                            <div class="skill-level" style="width: 70%"></div>
-                        </div>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">C#</span>
+                        <span class="skill-tag primary">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">HTML/CSS</span>
                     </div>
                 </div>
-                <div class="skill-category" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <h3><i class="fas fa-layer-group"></i> Frameworks & Technologies</h3>
-                    <div class="skill-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-microsoft"></i></div>
-                            <span>.NET Core</span>
-                            <div class="skill-level" style="width: 80%"></div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-card-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-layer-group"></i>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-cloud"></i></div>
-                            <span>Azure</span>
-                            <div class="skill-level" style="width: 70%"></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-plug"></i></div>
-                            <span>REST APIs</span>
-                            <div class="skill-level" style="width: 85%"></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
-                            <span>BPMN</span>
-                            <div class="skill-level" style="width: 75%"></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-react"></i></div>
-                            <span>React</span>
-                            <div class="skill-level" style="width: 65%"></div>
-                        </div>
+                        <h3>Frameworks & Platforms</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">.NET 8+</span>
+                        <span class="skill-tag primary">ASP.NET Core</span>
+                        <span class="skill-tag">Entity Framework</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">OutSystems</span>
+                        <span class="skill-tag">Blazor</span>
                     </div>
                 </div>
-                <div class="skill-category" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
-                    <div class="skill-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
-                            <span>Git</span>
-                            <div class="skill-level" style="width: 90%"></div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-card-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-sitemap"></i>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-github"></i></div>
-                            <span>GitHub</span>
-                            <div class="skill-level" style="width: 85%"></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-code"></i></div>
-                            <span>VS Code</span>
-                            <div class="skill-level" style="width: 95%"></div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
-                            <span>Advanced Excel</span>
-                            <div class="skill-level" style="width: 80%"></div>
-                        </div>
+                        <h3>Architecture & Principles</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag accent">SOLID Principles</span>
+                        <span class="skill-tag accent">Clean Architecture</span>
+                        <span class="skill-tag">Repository Pattern</span>
+                        <span class="skill-tag">DRY / KISS</span>
+                        <span class="skill-tag">Design Patterns</span>
+                        <span class="skill-tag">RBAC / JWT</span>
+                        <span class="skill-tag">Microservices</span>
                     </div>
                 </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-card-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AI & Modern Development</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag accent">GitHub Copilot</span>
+                        <span class="skill-tag accent">Prompt Engineering</span>
+                        <span class="skill-tag">AI-Assisted Development</span>
+                        <span class="skill-tag">ChatGPT / Claude</span>
+                        <span class="skill-tag">AI Code Review</span>
+                        <span class="skill-tag">Copilot Agents</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-card-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools & DevOps</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git / GitHub</span>
+                        <span class="skill-tag">Azure DevOps</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Visual Studio</span>
+                        <span class="skill-tag">SQL Server</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">CI/CD Pipelines</span>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-card-header">
+                        <div class="skill-icon-wrapper">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h3>Professional Skills</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Agile / Scrum</span>
+                        <span class="skill-tag">Stakeholder Communication</span>
+                        <span class="skill-tag">Technical Documentation</span>
+                        <span class="skill-tag">Code Review</span>
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Rapid Learning</span>
+                    </div>
+                </div>
+            </div>
+            <div class="section-close" data-aos="fade-up">
+                <span class="section-tag">&lt;/skills&gt;</span>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section - UPDATED WITH NEW PROJECT -->
-    <section id="projects" class="projects">
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Featured <span>Projects</span></h2>
-            <div class="projects-grid">
-                <!-- NEW: Policy Claim API Project -->
-                <div class="project-card" data-aos="flip-left" data-aos-duration="800">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Policy Claim API">
-                        <div class="project-overlay">
-                            <div class="project-tech">
-                                <span>C#</span>
-                                <span>.NET 10.0</span>
-                                <span>SQL</span>
-                                <span>API</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Policy Claim API</h3>
-                        <p>A RESTful API for managing insurance claims with full CRUD operations, status tracking, and interactive demo. Built with C# and .NET 10.0.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/VisionDevs/PolicyClaimAPI" class="btn-icon"><i class="fab fa-github"></i></a>
-                            <a href="https://github.com/VisionDevs/PolicyClaimAPI" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Real-world applications I've designed, developed, and delivered</p>
+            </div>
 
-                <!-- Task Manager App -->
-                <div class="project-card" data-aos="flip-left" data-aos-duration="800" data-aos-delay="200">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Task Manager App">
-                        <div class="project-overlay">
-                            <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JS</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Task Manager App</h3>
-                        <p>A web-based task manager application built with HTML, CSS, and JavaScript with dark mode support.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/VisionDevs/Project_1" class="btn-icon"><i class="fab fa-github"></i></a>
-                            <a href="https://visiondevs.github.io/Project_1/" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
+            <!-- Featured Project: GSAW -->
+            <div class="project-featured" data-aos="fade-up" data-aos-duration="1000">
+                <div class="project-featured-badge">
+                    <i class="fas fa-star"></i> Client Project — Live in Production
                 </div>
-
-                <!-- Weather App -->
-                <div class="project-card" data-aos="flip-left" data-aos-duration="800" data-aos-delay="400">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Weather App">
-                        <div class="project-overlay">
-                            <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>API</span>
+                <div class="project-featured-content">
+                    <div class="project-featured-info">
+                        <h3>GSAW.org.za — Full Organisation Website</h3>
+                        <p class="project-featured-desc">
+                            Designed and built the complete digital presence for God Save Africa & The World (GSAW), 
+                            a registered South African political organisation. The platform features dynamic content management, 
+                            news articles, event listings, membership registration, donation integration, and a photo gallery — 
+                            all optimised for performance and accessibility.
+                        </p>
+                        <div class="project-featured-highlights">
+                            <div class="pf-highlight">
+                                <i class="fas fa-check"></i>
+                                <span>Multi-page responsive website with 10+ unique pages</span>
+                            </div>
+                            <div class="pf-highlight">
+                                <i class="fas fa-check"></i>
+                                <span>Dynamic news/articles system with CMS-style management</span>
+                            </div>
+                            <div class="pf-highlight">
+                                <i class="fas fa-check"></i>
+                                <span>Membership registration, donations, and volunteer sign-up</span>
+                            </div>
+                            <div class="pf-highlight">
+                                <i class="fas fa-check"></i>
+                                <span>SEO optimised, POPIA compliant, mobile-first design</span>
+                            </div>
+                            <div class="pf-highlight">
+                                <i class="fas fa-check"></i>
+                                <span>WhatsApp integration and social media connectivity</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Weather App</h3>
-                        <p>A web-based weather application that fetches real-time weather data using APIs.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/VisionDevs/Project_2" class="btn-icon"><i class="fab fa-github"></i></a>
-                            <a href="https://visiondevs.github.io/Project_2/" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                        <div class="project-featured-tech">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive Design</span><span>SEO</span><span>Analytics</span>
+                        </div>
+                        <div class="project-featured-links">
+                            <a href="https://gsaw.org.za" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Visit Live Site</span>
+                            </a>
                         </div>
                     </div>
-                </div>
-
-                <!-- Client Management Portal (Future Project) -->
-                <div class="project-card" data-aos="flip-left" data-aos-duration="800" data-aos-delay="600">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Client Management Portal">
-                        <div class="project-overlay">
-                            <div class="project-tech">
-                                <span>C#</span>
-                                <span>MVC</span>
-                                <span>SQL</span>
+                    <div class="project-featured-preview">
+                        <div class="browser-mockup">
+                            <div class="browser-header">
+                                <div class="browser-dots"><span></span><span></span><span></span></div>
+                                <div class="browser-url">
+                                    <i class="fas fa-lock"></i>
+                                    gsaw.org.za
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Client Management Portal</h3>
-                        <p>Full-stack web application for managing client profiles and policies (Coming Soon).</p>
-                        <div class="project-links">
-                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
-                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i></a>
+                            <div class="browser-body">
+                                <div class="browser-placeholder">
+                                    <i class="fas fa-globe"></i>
+                                    <span>gsaw.org.za</span>
+                                    <small>Live Production Website</small>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="view-more" data-aos="fade-up">
-                <a href="https://github.com/VisionDevs" class="btn btn-primary bounce">
-                    <i class="fab fa-github"></i> View All on GitHub
+
+            <!-- Project Grid -->
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card-header">
+                        <div class="project-card-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <div class="project-card-links">
+                            <a href="https://github.com/VisionDevs/PolicyClaimAPI" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-card-title">Policy Claim API</h3>
+                    <p class="project-card-desc">Enterprise-grade RESTful API for insurance claim management with full CRUD operations, status tracking, validation, and interactive Swagger documentation.</p>
+                    <div class="project-card-tech">
+                        <span>C#</span><span>.NET 10</span><span>REST API</span><span>SQL</span><span>SOLID</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card-header">
+                        <div class="project-card-icon">
+                            <i class="fas fa-road"></i>
+                        </div>
+                        <div class="project-card-links">
+                            <a href="https://github.com/VisionDevs/dev-roadmap" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-card-title">Developer Roadmap App</h3>
+                    <p class="project-card-desc">Interactive learning platform tracking my development journey with progress tracking, AI prompts integration, and structured skill development paths.</p>
+                    <div class="project-card-tech">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Local Storage</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card-header">
+                        <div class="project-card-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-card-links">
+                            <a href="https://github.com/VisionDevs/Project_1" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            <a href="https://visiondevs.github.io/Project_1/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-card-title">Task Manager App</h3>
+                    <p class="project-card-desc">Feature-rich task management application with dark mode support, local storage persistence, and an intuitive user interface.</p>
+                    <div class="project-card-tech">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Dark Mode</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card-header">
+                        <div class="project-card-icon">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                        <div class="project-card-links">
+                            <a href="https://github.com/VisionDevs/Project_2" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            <a href="https://visiondevs.github.io/Project_2/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-card-title">Weather Application</h3>
+                    <p class="project-card-desc">Real-time weather application consuming third-party APIs with location search, dynamic UI updates, and responsive design.</p>
+                    <div class="project-card-tech">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>REST API</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-cta" data-aos="fade-up">
+                <a href="https://github.com/VisionDevs" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    <i class="fab fa-github"></i>
+                    <span>View All Projects on GitHub</span>
                 </a>
+            </div>
+            <div class="section-close" data-aos="fade-up">
+                <span class="section-tag">&lt;/projects&gt;</span>
             </div>
         </div>
     </section>
 
     <!-- Certifications Section -->
-    <section id="certifications" class="certifications">
+    <section id="certifications" class="certifications section">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Professional <span>Certifications</span></h2>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">&lt;certifications&gt;</span>
+                <h2 class="section-title">Certifications & Education</h2>
+                <p class="section-subtitle">Continuous learning is at the core of my development philosophy</p>
+            </div>
             <div class="cert-grid">
-                <div class="cert-card" data-aos="zoom-in" data-aos-duration="600">
-                    <i class="fab fa-google"></i>
-                    <h3>Google Cybersecurity Professional</h3>
-                    <p>October 2025</p>
-                    <span class="cert-badge">8 Courses</span>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="cert-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="cert-info">
+                        <h3>BSc Computer Science & Informatics</h3>
+                        <p class="cert-issuer">University of Johannesburg</p>
+                        <p class="cert-date">2021 — 2024</p>
+                    </div>
                 </div>
-                <div class="cert-card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
-                    <i class="fab fa-google"></i>
-                    <h3>Crash Course on Python - Google</h3>
-                    <p>October 2025</p>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="50">
+                    <div class="cert-icon"><i class="fab fa-google"></i></div>
+                    <div class="cert-info">
+                        <h3>Google Cybersecurity Professional</h3>
+                        <p class="cert-issuer">Google — 8 Course Specialisation</p>
+                        <p class="cert-date">October 2025</p>
+                    </div>
                 </div>
-                <div class="cert-card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
-                    <i class="fas fa-university"></i>
-                    <h3>FNB App Academy</h3>
-                    <p>Full Stack Development</p>
-                    <p>July 2025</p>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cert-icon"><i class="fab fa-microsoft"></i></div>
+                    <div class="cert-info">
+                        <h3>Microsoft AI Fluency</h3>
+                        <p class="cert-issuer">Microsoft</p>
+                        <p class="cert-date">June 2025</p>
+                    </div>
                 </div>
-                <div class="cert-card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
-                    <i class="fab fa-microsoft"></i>
-                    <h3>Microsoft AI Fluency</h3>
-                    <p>June 2025</p>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="cert-icon"><i class="fas fa-university"></i></div>
+                    <div class="cert-info">
+                        <h3>FNB App Academy — Full Stack Development</h3>
+                        <p class="cert-issuer">First National Bank</p>
+                        <p class="cert-date">July 2025</p>
+                    </div>
                 </div>
-                <div class="cert-card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="400">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Skills for a Digital Future</h3>
-                    <p>Project Codex</p>
-                    <p>August 2025</p>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cert-icon"><i class="fab fa-python"></i></div>
+                    <div class="cert-info">
+                        <h3>Crash Course on Python</h3>
+                        <p class="cert-issuer">Google</p>
+                        <p class="cert-date">October 2025</p>
+                    </div>
                 </div>
-                <div class="cert-card" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="500">
-                    <i class="fas fa-robot"></i>
-                    <h3>Artificial Intelligence Fundamentals</h3>
-                    <p>University of Johannesburg</p>
-                    <p>2023</p>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="cert-icon"><i class="fas fa-robot"></i></div>
+                    <div class="cert-info">
+                        <h3>Artificial Intelligence Fundamentals</h3>
+                        <p class="cert-issuer">University of Johannesburg</p>
+                        <p class="cert-date">2023</p>
+                    </div>
                 </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
+                    <div class="cert-info">
+                        <h3>Skills for a Digital Future</h3>
+                        <p class="cert-issuer">Project Codex</p>
+                        <p class="cert-date">August 2025</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-close" data-aos="fade-up">
+                <span class="section-tag">&lt;/certifications&gt;</span>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact section">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">Get In <span>Touch</span></h2>
-            <div class="contact-container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Have a project in mind or want to collaborate? I'd love to hear from you.</p>
+            </div>
+            <div class="contact-wrapper">
                 <div class="contact-info" data-aos="fade-right" data-aos-duration="800">
-                    <h3>Let's work together!</h3>
-                    <p>I'm currently open to new opportunities and collaborations. Feel free to reach out!</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="icon-wrapper pulse">
-                                <i class="fas fa-map-marker-alt"></i>
+                    <div class="contact-card">
+                        <h3>Get in Touch</h3>
+                        <p>I'm always open to discussing new opportunities, creative ideas, or ways to bring your vision to life.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4>Location</h4>
+                                    <p>Johannesburg, South Africa</p>
+                                </div>
                             </div>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Johannesburg, South Africa</p>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>vision.mavhungu@icloud.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p>+27 72 183 2918</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <div class="icon-wrapper pulse">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div>
-                                <h4>Email</h4>
-                                <p>vision.mavhungu@icloud.com</p>
-                            </div>
+                        <div class="contact-social">
+                            <a href="https://github.com/VisionDevs" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/vision-mavhungu-050023319" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="mailto:vision.mavhungu@icloud.com"><i class="fas fa-envelope"></i></a>
                         </div>
-                        <div class="contact-item">
-                            <div class="icon-wrapper pulse">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>+27 72 183 2918</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/VisionDevs" class="social-link slide-up"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/vision-mavhungu-050023319" class="social-link slide-up"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="mailto:vision.mavhungu@icloud.com" class="social-link slide-up"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
-                <div class="contact-form" data-aos="fade-left" data-aos-duration="800">
-                    <form id="contactForm" action="https://formspree.io/f/xwvrqdee" method="POST">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <div class="contact-form-wrapper" data-aos="fade-left" data-aos-duration="800">
+                    <form id="contactForm" action="https://formspree.io/f/xwvrqdee" method="POST" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                            </div>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What's this about?">
                         </div>
                         <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject">
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
                         </div>
                         <input type="hidden" name="_redirect" value="https://visiondevs.github.io/Rotondwa-Portfolio/thank-you.html">
                         <input type="hidden" name="_gotcha" style="display:none!important">
-                        <button type="submit" class="btn btn-primary submit-btn">
+                        <button type="submit" class="btn btn-primary btn-full">
                             <span>Send Message</span>
                             <i class="fas fa-paper-plane"></i>
                         </button>
                     </form>
                 </div>
+            </div>
+            <div class="section-close" data-aos="fade-up">
+                <span class="section-tag">&lt;/contact&gt;</span>
             </div>
         </div>
     </section>
@@ -465,26 +745,38 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">Rotondwa Vision <span>Mavhungu</span></div>
-                <p class="footer-text">Junior Software Developer passionate about building innovative solutions</p>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <span class="logo-bracket">&lt;</span>RV<span class="logo-bracket">/&gt;</span>
+                    </a>
+                    <p>Software Developer building enterprise solutions with passion, precision, and purpose.</p>
                 </div>
-                <div class="footer-bottom">
-                    <p>&copy; 2026 Rotondwa Vision Mavhungu. All rights reserved.</p>
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <h4>Navigation</h4>
+                        <a href="#about">About</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <a href="https://github.com/VisionDevs" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://www.linkedin.com/in/vision-mavhungu-050023319" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        <a href="mailto:vision.mavhungu@icloud.com">Email</a>
+                    </div>
                 </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Rotondwa Vision Mavhungu. Crafted with precision.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <a href="#" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </a>
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
