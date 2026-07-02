@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollEffects();
     initContactForm();
     initDownloadCV();
+    initCvModal();
     setFooterYear();
 });
 
@@ -166,17 +167,28 @@ function initCounters() {
 }
 
 function animateCounter(element, target) {
-    let current = 0;
     const duration = 2000;
-    const stepTime = duration / target;
+    const startTime = performance.now();
     
-    const timer = setInterval(() => {
-        current++;
-        element.textContent = current;
-        if (current >= target) {
-            clearInterval(timer);
+    function update(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        // Ease out cubic
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const current = Math.round(eased * target);
+        
+        if (target >= 1000) {
+            element.textContent = current.toLocaleString();
+        } else {
+            element.textContent = current;
         }
-    }, stepTime);
+        
+        if (progress < 1) {
+            requestAnimationFrame(update);
+        }
+    }
+    
+    requestAnimationFrame(update);
 }
 
 // ===== SCROLL EFFECTS =====
@@ -218,14 +230,7 @@ function initContactForm() {
             });
 
             if (response.ok) {
-                submitBtn.innerHTML = '<span>Sent!</span> <i class="fas fa-check"></i>';
-                submitBtn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
-                form.reset();
-                setTimeout(() => {
-                    submitBtn.innerHTML = originalHTML;
-                    submitBtn.style.background = '';
-                    submitBtn.disabled = false;
-                }, 3000);
+                window.location.href = 'thank-you.html';
             } else {
                 throw new Error('Failed to send');
             }
@@ -248,12 +253,40 @@ function initDownloadCV() {
 
     downloadBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        const link = document.createElement('a');
-        link.href = 'Rotondwa_Vision_Mavhungu_CV.pdf';
-        link.download = 'Rotondwa_Vision_Mavhungu_CV.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+        // Open CV modal instead of downloading directly
+        const modal = document.getElementById('cvModal');
+        if (modal) {
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+    });
+}
+
+// ===== CV MODAL =====
+function initCvModal() {
+    const modal = document.getElementById('cvModal');
+    const closeBtn = document.getElementById('cvModalClose');
+    if (!modal || !closeBtn) return;
+
+    closeBtn.addEventListener('click', () => {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+
+    // Close on backdrop click
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
     });
 }
 
